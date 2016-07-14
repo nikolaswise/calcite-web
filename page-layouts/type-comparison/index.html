@@ -22,7 +22,6 @@
       <link rel="stylesheet" href="../../assets/css/all.css">
     
 
-
     <!--[if lt IE 9]>
       <script src="../../assets/js/libs/selectivizr-min.js"></script>
       <script src="../../assets/js/libs/html5shiv.js"></script>
@@ -36,33 +35,200 @@
     
 
     <div class="wrapper">
-      <header class="third-nav">
-  <a href="#" class="icon-ui-left js-overflow-left nav-overflow-left"></a>
+      <header class="sub-nav" role="banner">
   <div class="grid-container">
-    <nav class="column-24 third-nav-container js-nav-overflow" role="navigation" aria-labelledby="thirdnav">
-      <a class="third-nav-link is-active" href="#">English</a>
-      <a class="third-nav-link" href="#">European</a>
-      <a class="third-nav-link" href="#">Eastern European</a>
-      <a class="third-nav-link" href="#">Greek</a>
-      <a class="third-nav-link" href="#">Cyrillic</a>
-      <a class="third-nav-link" href="#">Vietnamese</a>
-      <a class="third-nav-link" href="#">Turkish</a>
-      <a class="third-nav-link" href="#">Thai</a>
-      <a class="third-nav-link" href="#">Korean</a>
-      <a class="third-nav-link" href="#">Japanese</a>
-      <a class="third-nav-link" href="#">Hebrew</a>
-      <a class="third-nav-link" href="#">Chinese</a>
-      <a class="third-nav-link" href="#">Arabic</a>
-    </nav>
+    <div class="column-24">
+      <h1 class="sub-nav-title text-white">Type Comparison</h1>
+    </div>
   </div>
-  <a href="#" class="icon-ui-right js-overflow-right nav-overflow-right"></a>
 </header>
+
+<header class="third-nav">
+  <div class="third-nav-container">
+    <a href="#" class="icon-ui-left js-overflow-left nav-overflow-left"></a>
+    <div class="grid-container">
+      <nav class="column-24 js-nav-overflow" role="navigation" aria-labelledby="thirdnav">
+        <a class="third-nav-link is-active" href="#">English</a>
+        <a class="third-nav-link" href="#">European</a>
+        <a class="third-nav-link" href="#">Eastern European</a>
+        <a class="third-nav-link" href="#">Greek</a>
+        <a class="third-nav-link" href="#">Cyrillic</a>
+        <a class="third-nav-link" href="#">Vietnamese</a>
+        <a class="third-nav-link" href="#">Turkish</a>
+        <a class="third-nav-link" href="#">Thai</a>
+        <a class="third-nav-link" href="#">Korean</a>
+        <a class="third-nav-link" href="#">Japanese</a>
+        <a class="third-nav-link" href="#">Hebrew</a>
+        <a class="third-nav-link" href="#">Chinese</a>
+        <a class="third-nav-link" href="#">Arabic</a>
+      </nav>
+    </div>
+    <a href="#" class="icon-ui-right js-overflow-right nav-overflow-right"></a>
+  </div>
+</header>
+
+<div class="grid-container">
+
+  <div class="column-24 leader-2">
+    <div class="column-12">
+<h2>Internationalization of Type</h2>
+<p>Calcite Web is meant to be used by applications which are localized into hundreds of languages. Because of this, it is important that text displays properly in all languages. The main typeface used by Calcite Web is Avenir Next. Any languages that use the latin, cyrillic, or greek alphabets should render well with Avenir Next, but it doesn't contain characters required by several languages (including arabic, chinese, vietnamese, etc).</p>
+<p>Most of the languages not covered by Avenir Next don't pose a real problem. We can simply allow them to render in the browser default, and they are distinct enough that users won't feel as though something is wrong.</p>
+<p>The exception to this is Vietnamese, which uses mostly standard Latin characters, but also glyphs from the Latin Extended Additional set which are missing. This causes the missing characters to be rendered in a different font. This looks like a bug to the user. For this reason, we set the font family for pages in Vietnamese to Lucide Grande. Simply set the <code>lang</code> attribute of the html document to <code>vi</code> (the ISO-639 code for Vietnamese).</p>
+<p>You can preview how different languages render below with a sample set of characters from each language. Notice that vietnamese will look slightly off, but add <code>vi</code> to the lang and everything will render in Lucide Grande.</p>
+
+    </div>
+
+<table>
+<thead>
+<tr>
+<th>ISO-639</th>
+<th>Language</th>
+<th>Example Characters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ar</td>
+<td>Arabic</td>
+<td>صِف خَلقَ خَودِ كَمِثلِ الشَمسِ إِذ بَزَغَت — يَحظى الضَجيعُ بِها نَجلاءَ مِعطا</td>
+</tr>
+<tr>
+<td>cs</td>
+<td>Czech</td>
+<td>Příliš žluťoučký kůň úpěl ďábelské ódy</td>
+</tr>
+<tr>
+<td>da</td>
+<td>Danish</td>
+<td>Høj bly gom vandt fræk sexquiz på wc</td>
+</tr>
+<tr>
+<td>de</td>
+<td>German</td>
+<td>Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich</td>
+</tr>
+<tr>
+<td>el</td>
+<td>Greek</td>
+<td>Ταχίστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός Takhístè alôpèx vaphês psèménè gè, draskelízei ypér nòthroý kynós</td>
+</tr>
+<tr>
+<td>es</td>
+<td>Spanish</td>
+<td>Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita champaña del menú.</td>
+</tr>
+<tr>
+<td>et</td>
+<td>Estonian</td>
+<td>Põdur Zagrebi tšellomängija-följetonist Ciqo külmetas kehvas garaažis</td>
+</tr>
+<tr>
+<td>fi</td>
+<td>Finnish</td>
+<td>Fahrenheit ja Celsius yrjösivät Åsan backgammon-peliin, Volkswagenissa, daiquirin ja ZX81:n yhteisvaikutuksesta.</td>
+</tr>
+<tr>
+<td>fr</td>
+<td>French</td>
+<td>Buvez de ce whisky que le patron juge fameux.</td>
+</tr>
+<tr>
+<td>he</td>
+<td>Hebrew</td>
+<td>שפן אכל קצת גזר בטעם חסה, ודי. špn ʾkl qṣt gzr bṭʿm ḥsh, wdj</td>
+</tr>
+<tr>
+<td>it</td>
+<td>Italian</td>
+<td>Ma la volpe, col suo balzo, ha raggiunto il quieto Fido.</td>
+</tr>
+<tr>
+<td>ja</td>
+<td>Japanese</td>
+<td>いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす</td>
+</tr>
+<tr>
+<td>ko</td>
+<td>Korean</td>
+<td>키스의 고유조건은 입술끼리 만나야 하고 특별한 기술은 필요치 않다</td>
+</tr>
+<tr>
+<td>lt</td>
+<td>Lithuanian</td>
+<td>Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą</td>
+</tr>
+<tr>
+<td>lv</td>
+<td>Latvian</td>
+<td>Muļķa hipiji mēģina brīvi nogaršot celofāna žņaudzējčūsku.</td>
+</tr>
+<tr>
+<td>nb</td>
+<td>Norwegian</td>
+<td>Vår sære Zulu fra badeøya spilte jo whist og quickstep i min taxi.</td>
+</tr>
+<tr>
+<td>nl</td>
+<td>Dutch</td>
+<td>Exact vijf voor twaalf had de psycholoog zijn quotum bereikt</td>
+</tr>
+<tr>
+<td>pl</td>
+<td>Polish</td>
+<td>Jeżu klątw, spłódź Finom część gry hańb!</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>Portuguese</td>
+<td>Luís argüia à Júlia que «brações, fé, chá, óxido, pôr, zângão» eram palavras do português.</td>
+</tr>
+<tr>
+<td>ro</td>
+<td>Romanian</td>
+<td>Muzicologă în bej vând whisky și tequila, preț fix.</td>
+</tr>
+<tr>
+<td>ru</td>
+<td>Russian</td>
+<td>В чащах юга жил бы цитрус? Да, но фальшивый экземпляръ!</td>
+</tr>
+<tr>
+<td>sv</td>
+<td>Swedish</td>
+<td>Yxskaftbud, ge vår WC-zonmö IQ-hjälp</td>
+</tr>
+<tr>
+<td>th</td>
+<td>Thai</td>
+<td>เป็นมนุษย์สุดประเสริฐเลิศคุณค่า กว่าบรรดาฝูงสัตว์เดรัจฉาน จงฝ่าฟันพัฒนาวิชาการ อย่าล้างผลาญฤๅเข่นฆ่าบีฑาใคร ไม่ถือโทษโกรธแช่งซัดฮึดฮัดด่า หัดอภัยเหมือนกีฬาอัชฌาสัย ปฏิบัติประพฤติกฎกำหนดใจ พูดจาให้จ๊ะๆ จ๋าๆ น่าฟังเอยฯ</td>
+</tr>
+<tr>
+<td>tr</td>
+<td>Turkish</td>
+<td>Pijamalı hasta yağız şoföre çabucak güvendi</td>
+</tr>
+<tr>
+<td>vi</td>
+<td>Vietnamese</td>
+<td>Do bạch kim rất quý, sẽ để lắp vô xương.</td>
+</tr>
+<tr>
+<td>zh</td>
+<td>Chinese</td>
+<td>視野無限廣，窗外有藍天 (traditional) 中国智造，慧及全球 (simplified)</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
 
 
 <div class="grid-container leader-4">
   <!-- frutiger vs avenir next -->
   <section class="trailer-4 column-10 pre-1 post-1">
-    <h3>Frutiger Light as Body</h3>
+    <h3>Avenir Next as Body</h3>
     <p class="content-face"><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -81,11 +247,10 @@
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <small>Frutiger runs ~50k per family</small>
   </section>
 
   <section class="trailer-4 column-10 pre-1 post-1 avenir-body">
-    <h3>Avenir Next as Body</h3>
+    <h3>Avenir Next Light as Body</h3>
     <p class="avenir-light"><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -104,8 +269,9 @@
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <small>Avenir Next runs ~23k per family</small>
   </section>
+
+  <h2 class="trailer-2 pre-1">Extended Language Samples</h2>
 
   <section class="trailer-4 column-10 pre-1 post-1 lorem-czech">
     <p>Řekl sem pak vůdci svému: "Nu, již bych také, co tam nahoře jest, jak paní Fortúna své hostě ctí, rád spatřil." "Dobře," řekl on a vznesl se, než sem zvěděl, se mnou zhůru; kdež paní Fortúna, na kouli stojeci, koruny, sceptra, regimenty, řetězy, zápony, měšce, titule a jména, medy a cukry rozdávala, a teprv dále zhůru pouštěla. I pohledím na stavení hradu, kteréž o trojím ponebí bylo; a spatřím, že některé do dolních, jiné do prostředních, jiné do vrchních pokojíků uvozují. I dí mi tlumočník: "Zde dole přebývají, které paní Fortúna penězi a zbožím poctila; v prostředních pokojích ti, které rozkošemi krmí; v horních pak palácích, které slávou přiodívá, aby od jiných spatřováni, chváleni a ctěni býti museli. Některým dvojího spolu, neb i všeho trojího přeje; a ti se, kam chtí, procházeti mohou. Vidíš, jak šťastná věc jest, komu se sem dostati dostane." "Poďmež tedy," řekl sem, "mezi tyto třebas nejprv." Takž vejdeme do dolních sklepů, a aj tam tma a neveselo, takže sem nic teměř neviděl ponejprv, jen že sem břiňkání jakés slyšel, a puch stuchliny zarážel mne ze všech koutů. Vtom, když se mi trošku zrak probere, vidím plno ze všelijakých stavů lidí, ani tu chodí, stojí, sedí, leží, a každý má poutami spjaté nohy a ruce svázané řetězem, někteří přitom i na krku řetěz a na hřbetě břímě nějaké. I zděsil sem se a řekl: "Což pak toto, pro krále, do žaláře sme nějakého přišli?" Odpověděl mi, směje se, tlumočník: "Jakýs ty nerozum? Však toto darové jsou paní Fortúny, kterýmiž ona milé syny své obkládá." A já ohleduje jednomu, i druhému, i třetímu těch jeho darů, vidím ocelivá pouta, železné řetěze, olověnnou neb hliněnnou nůši."A jacíž to darové?" dím, "o tyť bych já nestal." "Ale, bloude, zle ty hledíš," dí mi tlumočník, "však pak zlato jest všecko to." I hledím znovu ještě pilněji a povídám mu, že já předce nevidím než železo a hlinu."Ej, nemudruj tak příliš," dí on;"věř jiným více než sobě: pohleď, jak oni sobě toho váží."</p>
@@ -172,11 +338,11 @@
 
     <p>של מחליטה לעברית רב־לשוני צ'ט. את עזה ואמנות ויקימדיה בהיסטוריה, מה אחר צילום לראות אנציקלופדיה. אחד אל שנורו למאמרים, זאת ביולי ומדעים ומהימנה בה. שער תרבות והנדסה מבוקשים גם, פולנית משופרות ואלקטרוניקה מדע את. כיצד ביוני מדע על, מה כדי פנאי בלשנות. זאת של תוכל לעריכה, אם כדי משפטית לעריכת.    </p>
   </section>
-  <section class="column-10 pre-1 post-1 ">
+  <section class="column-10 pre-1 post-1 trailer-2">
+    <h2>Fonts for non-western glyphs:</h2>
     <ul>
       <ul>
         <li>Vietnamese: Lucida Grande: Thiết lập</li>
-        <li>Turkish: Helvetica Neue: Ayarlar </li>
         <li>Thai: Thonburi: การตั้งค่า</li>
         <li>Korean: Apple SD Gothic Neo :설정</li>
         <li>Japanese: Heiti SC: 設定</li>

@@ -20,13 +20,14 @@
     <!-- stylesheets -->
     
       <link rel="stylesheet" href="../assets/css/all.css">
+      <link rel="stylesheet" href="../assets/css/extensions.css">
+      
     
 
-    <!--[if lt IE 9]>
-      <script src="../assets/js/libs/selectivizr-min.js"></script>
-      <script src="../assets/js/libs/html5shiv.js"></script>
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
-
   </head>
 
   <body>
@@ -42,13 +43,17 @@
       <nav class="drawer-nav" role="navigation">
         <aside class="side-nav">
           <h2 class="side-nav-title">Calcite Web</h2>
-            <form method="GET" action="/search/">
+            <form method="GET" action="../search/">
               <div class="search-bar">
-                <input type='search' placeholder='Search'>
+                <input type='search' placeholder='Search' name="q">
                 <button type="submit" class="search-submit icon-ui-search"></button>
               </div>
             </form>
+
+
             
+              
+                <a href="../" class="side-nav-link">Get Started</a>
               
             
               
@@ -83,10 +88,8 @@
                 <a href="../javascript" class="side-nav-link">JavaScript</a>
               
             
-              
-                <a href="../page-layouts" class="side-nav-link">Layouts</a>
-              
-            
+
+
         </aside>
       </nav>
     </div>
@@ -97,14 +100,18 @@
         <aside class="side-nav">
           <h2 class="side-nav-title padding-leader-half padding-trailer-half text-large">Calcite Web</h2>
           <div class="panel padding-trailer-half padding-leader-half">
-            <form method="GET" action="/search/">
+            <form method="GET" action="../search/">
               <div class="search-bar">
-                <input type='search' placeholder='Search'>
+                <input type='search' placeholder='Search' name="q">
                 <button type="submit" class="search-submit icon-ui-search"></button>
               </div>
             </form>
           </div>
+
+
             
+              
+                <a href="../" class="side-nav-link">Get Started</a>
               
             
               
@@ -139,10 +146,8 @@
                 <a href="../javascript" class="side-nav-link">JavaScript</a>
               
             
-              
-                <a href="../page-layouts" class="side-nav-link">Layouts</a>
-              
-            
+
+
         </aside>
       </nav>
     </div>
@@ -156,45 +161,8 @@
             <div class="tablet-hide">
               <a href="../" class="top-nav-title">Calcite Web</a>
               <nav class="top-nav-list" role="navigation">
-              
-                
-              
-                
-                  <a href="../type" class="top-nav-link">Type</a>
-                
-              
-                
-                  <a href="../grid" class="top-nav-link">Grid</a>
-                
-              
-                
-                  <a href="../icons" class="top-nav-link">Icons</a>
-                
-              
-                
-                  <a href="../color" class="top-nav-link">Color</a>
-                
-              
-                
-                  <a href="../components" class="top-nav-link">Components</a>
-                
-              
-                
-                  <a href="../patterns" class="top-nav-link">Patterns</a>
-                
-              
-                
-                  <a href="../sass" class="top-nav-link">Sass</a>
-                
-              
-                
-                  <a href="../javascript" class="top-nav-link">JavaScript</a>
-                
-              
-                
-                  <a href="../page-layouts" class="top-nav-link">Layouts</a>
-                
-              
+                <a href="../documentation" class="top-nav-link">Documentation</a>
+                <a href="../examples" class="top-nav-link">Examples</a>
               </nav>
               <a href="#" class="icon-ui-search js-expand-toggle top-nav-link right" data-expand="search">Search</a >
             </div>
@@ -206,61 +174,58 @@
         </div>
       </header>
 
-
-      <section class="expand js-expand  panel panel-no-padding" data-expand="search">
-        <div class="grid-container padding-trailer-half padding-leader-1 padding-trailer-1">
-          <form method="GET" action="/search/" class="column-24">
-            <label>Search Calcite Web
-              <a href="#" class="icon-ui-close js-expand-toggle right" data-expand="search"></a>
-              <div class="search-bar">
-                <input type='search' placeholder='Search'>
-                <button type="submit" class="search-submit icon-ui-search"></button>
-              </div>
-            </label>
-          </form>
-        </div>
-      </section>
-
-
       <!-- Secondary Nav Pattern -->
-      <header class="sub-nav" role="banner">
-        <div class="grid-container">
-          <div class="column-24">
-            
-              <h1 class="sub-nav-title text-white">Layouts</h1>
-              <a href="https://github.com/ArcGIS/calcite-web/releases" class="btn btn-white btn-arrow right leader-half">Latest Release</a>
-            
-          </div>
-        </div>
-      </header>
+      <!-- what -->
+      
+  <header class="sub-nav" role="banner">
+    <div class="grid-container">
+      <div class="column-24">
+        <h1 class="sub-nav-title leader-1 text-white">Documentation</h1>
+        <a href="https://github.com/ArcGIS/calcite-web/releases" class="btn btn-white icon-ui-download right leader-1 trailer-1">Download Latest Release</a>
+        <nav class="sub-nav-list" role="navigation" aria-labelledby="subnav">
+          
+            <a class="sub-nav-link " href="../documentation/">Get Started</a>
+          
+            <a class="sub-nav-link " href="../documentation/type">Type</a>
+          
+            <a class="sub-nav-link " href="../documentation/grid">Grid</a>
+          
+            <a class="sub-nav-link " href="../documentation/icons">Icons</a>
+          
+            <a class="sub-nav-link " href="../documentation/color">Color</a>
+          
+            <a class="sub-nav-link " href="../documentation/components">Components</a>
+          
+            <a class="sub-nav-link " href="../documentation/patterns">Patterns</a>
+          
+            <a class="sub-nav-link " href="../documentation/sass">Sass</a>
+          
+            <a class="sub-nav-link " href="../documentation/javascript">JavaScript</a>
+          
+        </nav>
+      </div>
+    </div>
+  </header>
+
 
       <!-- content of each page will go here -->
-      <div class="grid-container leader-1">
-        <div class="column-16">
-<h2>Example Layouts</h2>
-<p>Below are several layouts that demonstrate how to accomplish common page types in Calcite Web. In general, there are enough stock patterns and components that creating these pages doesn't require writing any CSS at all. These layouts can act as a good starting point to creating a page with Calcite Web.</p>
-<ul>
-<li><a href="./blog/">Blog</a></li>
-<li><a href="./homepage/">Homepage</a></li>
-<li><a href="./product/">Product Page</a></li>
-</ul>
-<h3>Documentation Sample Pages</h3>
-<ul>
-<li><a href="./documentation/">Documentation Home</a></li>
-<li><a href="./guide/">Guides</a></li>
-<li><a href="./api-reference/">API Reference</a></li>
-<li><a href="./sample-code/">Sample Code</a></li>
-</ul>
-<h2>Demo Pages</h2>
-<p>We also provide several pages which demonstrate certain aspects of Calcite Web.</p>
-<ul>
-<li><a href="./kitchen-sink/">Kitchen Sink</a></li>
-<li><a href="./grid/">Grid</a></li>
-<li><a href="./type-comparison/">Type Comparison</a></li>
-</ul>
+      
+<div class="grid-container leader-1">
+  <div class="column-6 tablet-column-12">
+    <aside class="side-nav" aria-role="complementary">
+      
+    </aside>
+    <div class="js-sticky scroll-show tablet-hide" data-top="46">
+      <a href="#" class="btn btn-clear">Back to Top</a>
+    </div>
+  </div>
 
+  <a id="skip-to-content" tabindex="0"></a>
+  <main class="column-17 phone-column-6 tablet-column-12 pre-1 rtl-post-0 content-face" role="main">
+
+    
+  </main>
 </div>
-      </div>
 
     </div>
 
@@ -320,10 +285,14 @@
     </footer>
 
     <script src="../assets/js/libs/calcite-web.js"></script>
+    <script src="../assets/js/libs/calcite-web-marketing.js"></script>
+
     <script src="../assets/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    
 
     
 
   </body>
-
 </html>

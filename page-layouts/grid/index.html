@@ -20,13 +20,16 @@
     <!-- stylesheets -->
     
       <link rel="stylesheet" href="../../assets/css/all.css">
+      <link rel="stylesheet" href="../../assets/css/extensions.css">
+      
+        <link rel="stylesheet" href="../../assets/css/all.css">
+      
     
 
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/libs/selectivizr-min.js"></script>
-      <script src="../../assets/js/libs/html5shiv.js"></script>
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
-
   </head>
 
   <body>
@@ -42,13 +45,17 @@
       <nav class="drawer-nav" role="navigation">
         <aside class="side-nav">
           <h2 class="side-nav-title">Calcite Web</h2>
-            <form method="GET" action="/search/">
+            <form method="GET" action="../../search/">
               <div class="search-bar">
-                <input type='search' placeholder='Search'>
+                <input type='search' placeholder='Search' name="q">
                 <button type="submit" class="search-submit icon-ui-search"></button>
               </div>
             </form>
+
+
             
+              
+                <a href="../../" class="side-nav-link">Get Started</a>
               
             
               
@@ -83,10 +90,8 @@
                 <a href="../../javascript" class="side-nav-link">JavaScript</a>
               
             
-              
-                <a href="../../page-layouts" class="side-nav-link">Layouts</a>
-              
-            
+
+
         </aside>
       </nav>
     </div>
@@ -97,14 +102,18 @@
         <aside class="side-nav">
           <h2 class="side-nav-title padding-leader-half padding-trailer-half text-large">Calcite Web</h2>
           <div class="panel padding-trailer-half padding-leader-half">
-            <form method="GET" action="/search/">
+            <form method="GET" action="../../search/">
               <div class="search-bar">
-                <input type='search' placeholder='Search'>
+                <input type='search' placeholder='Search' name="q">
                 <button type="submit" class="search-submit icon-ui-search"></button>
               </div>
             </form>
           </div>
+
+
             
+              
+                <a href="../../" class="side-nav-link">Get Started</a>
               
             
               
@@ -139,10 +148,8 @@
                 <a href="../../javascript" class="side-nav-link">JavaScript</a>
               
             
-              
-                <a href="../../page-layouts" class="side-nav-link">Layouts</a>
-              
-            
+
+
         </aside>
       </nav>
     </div>
@@ -156,45 +163,8 @@
             <div class="tablet-hide">
               <a href="../../" class="top-nav-title">Calcite Web</a>
               <nav class="top-nav-list" role="navigation">
-              
-                
-              
-                
-                  <a href="../../type" class="top-nav-link">Type</a>
-                
-              
-                
-                  <a href="../../grid" class="top-nav-link">Grid</a>
-                
-              
-                
-                  <a href="../../icons" class="top-nav-link">Icons</a>
-                
-              
-                
-                  <a href="../../color" class="top-nav-link">Color</a>
-                
-              
-                
-                  <a href="../../components" class="top-nav-link">Components</a>
-                
-              
-                
-                  <a href="../../patterns" class="top-nav-link">Patterns</a>
-                
-              
-                
-                  <a href="../../sass" class="top-nav-link">Sass</a>
-                
-              
-                
-                  <a href="../../javascript" class="top-nav-link">JavaScript</a>
-                
-              
-                
-                  <a href="../../page-layouts" class="top-nav-link">Layouts</a>
-                
-              
+                <a href="../../documentation" class="top-nav-link">Documentation</a>
+                <a href="../../examples" class="top-nav-link">Examples</a>
               </nav>
               <a href="#" class="icon-ui-search js-expand-toggle top-nav-link right" data-expand="search">Search</a >
             </div>
@@ -206,37 +176,20 @@
         </div>
       </header>
 
-
-      <section class="expand js-expand  panel panel-no-padding" data-expand="search">
-        <div class="grid-container padding-trailer-half padding-leader-1 padding-trailer-1">
-          <form method="GET" action="/search/" class="column-24">
-            <label>Search Calcite Web
-              <a href="#" class="icon-ui-close js-expand-toggle right" data-expand="search"></a>
-              <div class="search-bar">
-                <input type='search' placeholder='Search'>
-                <button type="submit" class="search-submit icon-ui-search"></button>
-              </div>
-            </label>
-          </form>
-        </div>
-      </section>
-
-
       <!-- Secondary Nav Pattern -->
-      <header class="sub-nav" role="banner">
-        <div class="grid-container">
-          <div class="column-24">
-            
-              <h1 class="sub-nav-title text-white">Grid Demo</h1>
-              <a href="https://github.com/ArcGIS/calcite-web/releases" class="btn btn-white btn-arrow right leader-half">Latest Release</a>
-            
-          </div>
-        </div>
-      </header>
+      <!-- what -->
+      
 
       <!-- content of each page will go here -->
-      <div class="grid-container leader-1">
-        <h2 id="columns" class="column-24">Columns</h2>
+      <div class="grid-example">
+  <div class="column-24 trailer-5">
+   <div class="column-1"><span>1</span></div>
+   <div class="column-4 pre-6 post-6 rtl-pre-6"><span>4 pre-6 post-6</span></div>
+   <div class="column-1"><span>1</span></div>
+ </div>
+</div>
+
+<h2 id="columns" class="column-24">Columns</h2>
 
 <div class="grid-example trailer-2 leader-1">
   <div class="column-1"><span>1</span></div>
@@ -271,14 +224,10 @@
   <div class="column-18 tablet-column-8">
     <span class="tablet-hide">.column-18</span>
     <span class="tablet-show">.tablet-column-8</span>
-    <div class="column-4 tablet-column-4">
-      <span class="tablet-hide">.column-4</span>
+    <div class="column-3 pre-1 tablet-column-4">
+      <span class="tablet-hide">.column-3</span>
       <span class="tablet-show">.tablet-column-4</span>
       <div class="column-1 tablet-column-4">
-        <span class="tablet-hide">1</span>
-        <span class="tablet-show">.tablet-column-4</span>
-      </div>
-      <div class="column-1 tablet-column-4 tablet-first-column">
         <span class="tablet-hide">1</span>
         <span class="tablet-show">.tablet-column-4</span>
       </div>
@@ -442,8 +391,6 @@
     <div class="block"><span>.block</span></div>
   </div>
 </div>
-      </div>
-
     </div>
 
     
@@ -502,10 +449,14 @@
     </footer>
 
     <script src="../../assets/js/libs/calcite-web.js"></script>
+    <script src="../../assets/js/libs/calcite-web-marketing.js"></script>
+
     <script src="../../assets/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    
 
     
 
   </body>
-
 </html>

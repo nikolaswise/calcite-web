@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>  <html class="ie lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+
+    <!-- Set encoding -->
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Use title from page frontmatter -->
+    <title>Calcite Web | Esri Design Patterns</title>
+
+    <!-- Link to favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+
+    <!-- stylesheets -->
+    
+      <link rel="stylesheet" href="../assets/css/all.css">
+      <link rel="stylesheet" href="../assets/css/extensions.css">
+      
+    
+
+    <!--[if IE]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--
+    ┌─────────┐
+    │ Drawers │
+    └─────────┘
+     ↳ http://esri.github.io/calcite-web/patterns/#drawers
+     ↳ patterns → _drawers.md
+    -->
+    <div class="drawer drawer-left js-drawer" data-drawer="top-nav">
+      <!-- <nav class="drawer-nav" role="navigation" aria-labelledby="topnavdrawerleft"> -->
+      <nav class="drawer-nav" role="navigation">
+        <aside class="side-nav">
+          <h2 class="side-nav-title">Calcite Web</h2>
+            <form method="GET" action="../search/">
+              <div class="search-bar">
+                <input type='search' placeholder='Search' name="q">
+                <button type="submit" class="search-submit icon-ui-search"></button>
+              </div>
+            </form>
+
+
+            
+              
+                <a href="../" class="side-nav-link">Get Started</a>
+              
+            
+              
+                <a href="../type" class="side-nav-link">Type</a>
+              
+            
+              
+                <a href="../grid" class="side-nav-link">Grid</a>
+              
+            
+              
+                <a href="../icons" class="side-nav-link">Icons</a>
+              
+            
+              
+                <a href="../color" class="side-nav-link">Color</a>
+              
+            
+              
+                <a href="../components" class="side-nav-link">Components</a>
+              
+            
+              
+                <a href="../patterns" class="side-nav-link">Patterns</a>
+              
+            
+              
+                <a href="../sass" class="side-nav-link">Sass</a>
+              
+            
+              
+                <a href="../javascript" class="side-nav-link">JavaScript</a>
+              
+            
+
+
+        </aside>
+      </nav>
+    </div>
+
+    <div class="drawer drawer-right js-drawer" data-drawer="right">
+      <!-- <nav class="drawer-nav" role="navigation" aria-labelledby="topnavdrawerright"> -->
+      <nav class="drawer-nav" role="navigation">
+        <aside class="side-nav">
+          <h2 class="side-nav-title padding-leader-half padding-trailer-half text-large">Calcite Web</h2>
+          <div class="panel padding-trailer-half padding-leader-half">
+            <form method="GET" action="../search/">
+              <div class="search-bar">
+                <input type='search' placeholder='Search' name="q">
+                <button type="submit" class="search-submit icon-ui-search"></button>
+              </div>
+            </form>
+          </div>
+
+
+            
+              
+                <a href="../" class="side-nav-link">Get Started</a>
+              
+            
+              
+                <a href="../type" class="side-nav-link">Type</a>
+              
+            
+              
+                <a href="../grid" class="side-nav-link">Grid</a>
+              
+            
+              
+                <a href="../icons" class="side-nav-link">Icons</a>
+              
+            
+              
+                <a href="../color" class="side-nav-link">Color</a>
+              
+            
+              
+                <a href="../components" class="side-nav-link">Components</a>
+              
+            
+              
+                <a href="../patterns" class="side-nav-link">Patterns</a>
+              
+            
+              
+                <a href="../sass" class="side-nav-link">Sass</a>
+              
+            
+              
+                <a href="../javascript" class="side-nav-link">JavaScript</a>
+              
+            
+
+
+        </aside>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <!-- Logged Out Pattern-->
+      <header class="top-nav">
+        <a class="skip-to-content" href="#skip-to-content">Skip To Content</a>
+        <div class="grid-container">
+          <div class="column-24">
+            <div class="tablet-hide">
+              <a href="../" class="top-nav-title">Calcite Web</a>
+              <nav class="top-nav-list" role="navigation">
+                <a href="../documentation" class="top-nav-link">Documentation</a>
+                <a href="../examples" class="top-nav-link">Examples</a>
+              </nav>
+              <a href="#" class="icon-ui-search js-expand-toggle top-nav-link right" data-expand="search">Search</a >
+            </div>
+
+            <div class="tablet-show">
+              <a href="/" class="icon-ui-menu top-nav-title js-drawer-toggle" data-drawer="top-nav">Calcite Web</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Secondary Nav Pattern -->
+      <!-- what -->
+      
+  <header class="sub-nav" role="banner">
+    <div class="grid-container">
+      <div class="column-24">
+        <h1 class="sub-nav-title leader-1 text-white">Documentation</h1>
+        <a href="https://github.com/ArcGIS/calcite-web/releases" class="btn btn-white icon-ui-download right leader-1 trailer-1">Download Latest Release</a>
+        <nav class="sub-nav-list" role="navigation" aria-labelledby="subnav">
+          
+            <a class="sub-nav-link is-active" href="../documentation/">Get Started</a>
+          
+            <a class="sub-nav-link " href="../documentation/type">Type</a>
+          
+            <a class="sub-nav-link " href="../documentation/grid">Grid</a>
+          
+            <a class="sub-nav-link " href="../documentation/icons">Icons</a>
+          
+            <a class="sub-nav-link " href="../documentation/color">Color</a>
+          
+            <a class="sub-nav-link " href="../documentation/components">Components</a>
+          
+            <a class="sub-nav-link " href="../documentation/patterns">Patterns</a>
+          
+            <a class="sub-nav-link " href="../documentation/sass">Sass</a>
+          
+            <a class="sub-nav-link " href="../documentation/javascript">JavaScript</a>
+          
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+      <!-- content of each page will go here -->
+      
+<div class="grid-container leader-1">
+  <div class="column-6 tablet-column-12">
+    <aside class="side-nav" aria-role="complementary">
+      
+        <h4 class="side-nav-title">Get Started</h4>
+        <!-- <nav aria-role="navigation" aria-labelledby="sidenav"> -->
+        <nav aria-role="navigation">
+          
+            
+              <a href="#get-started" class="side-nav-link">Overview</a>
+            
+          
+            
+              <a href="#static-files" class="side-nav-link">Static Files</a>
+            
+          
+            
+              <a href="#ruby-gem" class="side-nav-link">Ruby Gem</a>
+            
+          
+            
+              <a href="#npm" class="side-nav-link">NPM</a>
+            
+          
+        </nav>
+      
+        <h4 class="side-nav-title">Contributing</h4>
+        <!-- <nav aria-role="navigation" aria-labelledby="sidenav"> -->
+        <nav aria-role="navigation">
+          
+            
+              <a href="#contributing" class="side-nav-link">Overview</a>
+            
+          
+            
+              <a href="#development" class="side-nav-link">Development</a>
+            
+          
+            
+              <a href="#versioning" class="side-nav-link">Versioning</a>
+            
+          
+            
+              <a href="#deploy-the-documentation" class="side-nav-link">Deploying the Documentation</a>
+            
+          
+        </nav>
+      
+    </aside>
+    <div class="js-sticky scroll-show tablet-hide" data-top="46">
+      <a href="#" class="btn btn-clear">Back to Top</a>
+    </div>
+  </div>
+
+  <a id="skip-to-content" tabindex="0"></a>
+  <main class="column-17 phone-column-6 tablet-column-12 pre-1 rtl-post-0 content-face" role="main">
+
+    
+      <h1 class="text-rule" id="get-started" tabindex="0">Get Started</h1>
+      
+        <section>
+          
+
+          <p>Calcite Web is a CSS framework built with <a href="http://sass-lang.com/">Sass</a>. A dependency-free JavaScript library for use with interactive patterns like tabs and modals is also included.</p>
+<p>Calcite Web is a web adaptation of Calcite, the desktop framework developed for ArcGIS Pro. The idea is to have designs be consistent, but also embrace the characteristics that make each medium unique.</p>
+<p>Calcite Web was built <em>for</em> developers. It is meant to be flexible enough that you can accomplish 80% of your website with the default patterns. If you use Calcite Web as a Sass library, you'll also get a set of very helpful mixins to help you make new patterns and components that fit in with the Calcite methodology and aesthetic.</p>
+<h2>Using Calcite Web</h2>
+<p>There are three ways to use Calcite Web:</p>
+<ul>
+<li>(a) copying static files into your project</li>
+<li>(b) installing via a package manager</li>
+<li>(c) loading files from the cdn</li>
+</ul>
+<p>By default, Calcite Web expects image files to be located at <code>../</code>. If your fonts are elsewhere, set the <code>$font-path</code> variable</p>
+<p>Using this framework as a Sass library will give you the most power, but whatever your flavor, we have you covered.</p>
+<p>If you are migrating from Tailcoat, checkout the <a href="../migration-guide/">migration guide</a>.</p>
+<p>Calcite Web is an open project, that anyone can use to make web apps. However, some of our resources are not. Using Calcite Web on any project that does not live at an Esri or ArcGIS domain will not have access to any of Esri's brand typefaces. You can load a version of the framework with typefaces removes with <code>calcite-web-no-fonts.css</code>.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="static-files" tabindex="0">Static Files</h2>
+          
+
+          <p>This is probably the easiest way, but you won't get any of the helpful Sass mixins. If you're looking to get up and running quickly, just <a href="https://github.com/ArcGIS/calcite-web/releases">download the latest release</a> and move the zipped files to wherever you keep your assets (CSS, JavaScript, images). Be sure to use <a href="http://esri.github.io/calcite-web/">the documentation site</a> to copy and paste patterns, components, and even a sample html boilerplate.</p>
+<p><a href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.7/css/calcite-web.min.css">https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.7/css/calcite-web.min.css</a></p>
+<p>When used statically, one very helpful thing to know is that Calcite Web comes bundled with several modifier classes. For example, if you need to add some margin to the top of an element, instead of writing a class and adding it yourself, you can use the built in <code>leader-X</code> class:</p>
+<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"leader-3"</span>&gt;</span>
+  This item will get three 'lines' of margin at the top.
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>This will keep spacing consistent and you won't have to write any CSS! There are modifier classes for virtually everything: padding, margin, text-color, background-color, etc. Be sure to read <a href="http://esri.github.io/calcite-web/grid/">the documentation</a> to learn what is possible.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="ruby-gem" tabindex="0">Ruby Gem</h2>
+          
+
+          <p>To install Calcite-Web as a ruby gem, reference the gem from your <code>Gemfile</code>:</p>
+<pre><code>gem <span class="hljs-string">"calcite-web"</span>, :git =&gt; <span class="hljs-string">"https://github.com/Esri/calcite-web.git"</span>, :tag =&gt; <span class="hljs-string">"current.tag.version"</span>
+</code></pre>
+<p>Be sure to use the replace <code>current.tag.version</code> with <a href="https://github.com/Esri/calcite-web/releases">the most up to date tag</a>.</p>
+<p>This makes Calcite Web available as a Compass extension. To use Calcite Web, make sure you require the gem in your compass config file (usually found at <code>config/compass.rb</code>). an example config file might look like this:</p>
+<pre><code class="ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">'calcite-web'</span>
+
+css_dir = <span class="hljs-string">"stylesheets"</span>
+sass_dir = <span class="hljs-string">"sass"</span>
+</code></pre>
+<p>Then in your project's sass files, just import it:</p>
+<pre><code><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"calcite-web"</span></span>;
+</code></pre>
+<p>That will give you everything including Sass utilities. You will also need to copy over the JavaScript and image assets to your static folder <a href="/#static-files">(see above)</a>.</p>
+<p>Calcite Web has a built in library of mixins that cover everything from animation to font-size. To be sure you're building your site in the easiest way (and the most visually consistent way) read up on everything that's available on the <a href="./sass">Sass Page</a>.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="npm" tabindex="0">NPM</h2>
+          
+
+          <p>To install Calcite Web with npm, type:</p>
+<pre><code>npm <span class="hljs-keyword">install</span> --save-dev Esri/calcite-web<span class="hljs-comment">#v1.0.0-beta.24</span>
+</code></pre>
+<p>You must add the current version in order to get the <code>dist/</code> folder.</p>
+<p>Then, if you're using sass, be sure to add <code>node_modules/calcite-web/dist/sass/</code> to your load path. If you're using <code>grunt-contrib-sass</code> you add that like this:</p>
+<pre><code class="js"><span class="hljs-string">'sass'</span>: {
+  target: {
+    options: {
+      loadPath: <span class="hljs-string">'node_modules/calcite-web/dist/sass/'</span>,
+      <span class="hljs-built_in">require</span>: <span class="hljs-string">'./lib/list-files.rb'</span>
+    },
+    files: {
+      <span class="hljs-string">'path/to.css'</span>: <span class="hljs-string">'path/to.scss'</span>
+    }
+  }
+}
+</code></pre>
+<p>Then in your main <code>.scss</code> file, you can just require the framework: <code>@import &quot;calcite-web&quot;;</code>. Everything mentioned about mixins above in the <a href="/#ruby-gem">Ruby gem section</a> applies to the Node module as well, so scroll up a bit and learn more about how Calcite Web functions as a Sass library;</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+    
+      <h1 class="text-rule" id="contributing" tabindex="0">Contributing</h1>
+      
+        <section>
+          
+
+          <p>Calcite Web is open to all types of contributions from across Esri. Things you can do to contribute include:</p>
+<ol>
+<li>Report a bug (<a href="https://github.com/Esri/calcite-web/issues/new">open an issue</a>)</li>
+<li>Suggest a new pattern or component (<a href="https://github.com/Esri/calcite-web/issues/new">open an issue</a>)</li>
+<li>Fork the repository and fix one of the <a href="https://github.com/Esri/calcite-web/issues">open issues</a></li>
+<li>Report problems with the <a href="http://esri.github.io/calcite-web/">documentation</a>.</li>
+</ol>
+<h3>Install Dependencies</h3>
+<p>Calcite Web has two development dependencies, Node.js and Grunt. If you already have these on your computer, you can skip these steps:</p>
+<ol>
+<li>Visit <a href="http://nodejs.org/">nodejs.org</a> to install Node.</li>
+<li><code>npm install -g grunt-cli</code> to install Grunt.</li>
+</ol>
+<h3>Fork the Repository</h3>
+<p>All the code for Calcite Web lives <a href="https://github.com/esri/calcite-web">on GitHub</a>. We use the <a href="https://help.github.com/articles/using-pull-requests/">fork and pull model</a> to manage contribution.</p>
+<ol>
+<li>Fork the repository so you have your own copy (<code>your-username/calcite-web</code>)</li>
+<li>Clone the repo locally with <code>git clone https://github.com/your-username/calcite-web</code></li>
+<li>Move into the clone repo:  <code>cd calcite-web</code></li>
+<li>Install project dependencies: <code>npm install</code></li>
+</ol>
+<p>You should also add <code>Esri/calcite-web</code> as a remote at this point. We generally call this remote branch 'upstream':</p>
+<pre><code>git remote <span class="hljs-built_in">add</span> upstream http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/Esri/calcite-web
+</code></pre>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="development" tabindex="0">Development</h2>
+          
+
+          <!-- To run a development environment, just type `grunt`. You should have a copy of the documentation site live at [localhost:8888](http://localhost:8888). As you develop features and fix bugs, be sure to write notes in `CHANGELOG.md`.
+ -->
+<h1>Working on the Calcite Web framework</h1>
+<p>This document assumes you’ve read the <code>README.md</code> and <code>CONTRIBUTING.md</code> files, and have the project installed and running in your development environment.</p>
+<h2>Structures</h2>
+<p>Making additions and edits to Calcite Web is a process with a number of structural requirements, designed to keep the codebase clean, DRY,  and self-documenting. The overall project structure has a number of facets that need to be understood before getting started. The following directory structure highlights some of the key structures:</p>
+<pre><code>/calcite-web
+    📄 CHANGELOG<span class="hljs-class">.md</span>
+    /lib
+        /js
+            📄 calcite-web<span class="hljs-class">.js</span>
+            📄 calcite-web-[extension]<span class="hljs-class">.js</span>
+            /helpers
+            /patterns
+        /sass
+            📄 calcite-web<span class="hljs-class">.scss</span>
+            📄 calcite-web-[extension]<span class="hljs-class">.scss</span>
+            /calcite-web
+                /components
+                /patterns
+                /extensions
+    /dist
+    /docs
+        /source
+            📄 table_of_contents<span class="hljs-class">.yml</span>
+            /documentation
+                /components
+                /patterns
+                    📄 _[pattern]<span class="hljs-class">.md</span>
+                    /sample-<span class="hljs-tag">code</span>
+                        📄 _[pattern]<span class="hljs-class">.html</span>
+        /build
+</code></pre>
+<h3>Changelog</h3>
+<p>The Changelog is an important document, both for developers working together to improve Calcite Web and developers who need to manage updating their projects to newer versions of the framework. Being as clear as possible to what progress you’ve made in the Changeling is essential — particularly if you remove or alter the functionality of any part of the framework.</p>
+<p>Keep this updated with either the current version number, to the  <code>Unreleased</code> header. Make sure you add to the Changelog before you open a pull request.</p>
+<h3>Lib</h3>
+<p>The source code for the framework itself lives in this directory. All of the final library deliverables are in here.</p>
+<h3>Lib / js</h3>
+<p>This is where all the source code for the Javascript library is kept. This includes the Calcite Web Core <code>calcite-web.js</code>, along with any JavaScript files that may be needed to power any extensions, such as <code>calcite-web-marketing.js</code>. These files are written in ES6 to take advantage of the module system.</p>
+<p>The <code>/helpers</code> directory contains a number of ES6 modules that enable common behavior needed across the library - class and dom manipulation, the event bus, and aria handling functions. The <code>/patterns</code> directory contains modules that enable UI behavior of the discreet patterns.</p>
+<h3>Lib / sass</h3>
+<p>All the core CSS for the framework is in this folder, written as  SASS. Sass is primary used to enable a module system, similar to our implementation of ES6 for JavaScript.</p>
+<p>The <code>calcite-web.scss</code> file contains the core framework in it’s entirety, and is by itself just a pile of default variables and references to the modules that make up the actual representational codebase.</p>
+<p>Extensions and custom builds live next to this file. An extension like <code>calcite-web-marketing.scss</code> references the modules that are required for adding new UI patterns to a project without duplicating any core core, while builds like <code>calcite-web-no-fonts.scss</code> are intended to be used in replace of the core framework. Extensions make the framework larger, custom builds make the framework smaller.</p>
+<h4>Lib / sass / components</h4>
+<p>There are a number of folders in the <code>/sass</code> directory which cover the entire framework, but the <code>/components</code> and <code>/patterns</code> are the ones that hold the most UI pattern content.</p>
+<p>Component modules look like <code>_[component].scss</code>. Each file should contain only the representation code necessary for a single, specific and discrete UI component.</p>
+<p>The term <code>component</code> is meant to be small, singular dom nodes or UI patterns that are incredibly flexible and have very little opinion about their surrounding markup.</p>
+<h4>Lib / sass / patterns</h4>
+<p>Patterns are more involved than components, and require significantly more markup to achieve. Patterns can be composed entirely out of smaller components, with no markup of their own. More complicated UI elements like modals and tabs are considered patterns, and need significant JavaScript to make functional and accessible.</p>
+<p>Pattern modules look like <code>_[pattern].scss</code>. Each file should contain only the representation code necessary for a single, specific and discrete UI component.</p>
+<h3>Dist</h3>
+<p>The <code>/dist</code> directory is what gets delivered to the end user when the framework is downloaded or installed via package manager. Every file in the <code>/dist</code> is generated, and editing files in here is futile. Its not tracked by git, so any changes made in the <code>/dist</code> folder can not be checked in to source control. Any changes made to any file in this folder will be overwritten by the build process.</p>
+<p>We distribute the source files as Sass and ES6 JavaScript, and also compiled files that are usable directly in the browser as CSS and ES5 Javascript. There is some serious tooling that automates this entire process.</p>
+<h3>Docs</h3>
+<p>The website that creates the <a href="http://esri.github.io/calcite-web/">Calcite Web Framework site</a> lives in here. This includes all the documentation of patterns, components, the JavaScript library, sample code, guides, and usage examples.</p>
+<h4>Docs / build</h4>
+<p>Like <code>/dist</code>, <code>/build</code> is a generated, untracked folder full of compiled files ready to host on GitHub Pages, and no files in here should be directly edited.</p>
+<h4>Docs / source</h4>
+<p>The source files for the Documentation site live in here. There are a number of things to note:</p>
+<ul>
+<li>
+<p>The <code>table_of_contents.yml</code> file contains a complete listing of the entire framework, with logical divisions, lists of patterns and components, and variations for each.</p>
+</li>
+<li>
+<p>The <code>/documentation</code> folder contains the markdown and html required to render the doc for each segment in the framework. Each item in the table of contents needs both a markdown file for written documentation, and a sample code html file for rendering and copy-pasting.</p>
+</li>
+<li>
+<p>The <code>/examples</code> folder contains larger sets of sample html for both complex page layouts for the core framework, and the large UI patterns enabled by the extensions. The extensions are not documented anywhere other than this <code>/examples</code> folder, and should therefor be restricted to very specific and comprehensive UI patterns.</p>
+</li>
+</ul>
+<h3>How We Use GitHub</h3>
+<p>All the code for Calcite Web lives <a href="https://github.com/esri/calcite-web">on GitHub</a>. We use the <a href="https://help.github.com/articles/using-pull-requests/">fork and pull model</a> to manage contribution. To contribute, you should:</p>
+<ol>
+<li>Commit your changes.</li>
+<li>Note your changes in <code>CHANGELOG.md</code></li>
+<li>Make sure your copy is up to date: <code>git pull upstream master</code></li>
+<li>Push your changes to your fork: <code>/your-username/calcite-web</code></li>
+<li>Open a pull-request from your fork (<code>/your-username/calcite-web</code>) to the 'upstream' fork (<code>/Esri/calcite-web</code>).</li>
+</ol>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="versioning" tabindex="0">Versioning</h2>
+          
+
+          <p>Calcite-Web uses SemVer (Semantic Versioning) for its releases. This means that version numbers are basically formatted like <code>MAJOR.MINOR.PATCH</code>. If you're well acquainted with SemVer you should skip to 'Bumping the Version' below.</p>
+<h4>Major</h4>
+<p>Breaking changes are signified with a new <strong>first</strong> number. For example, moving from 1.0.0 to 2.0.0 implies breaking changes.</p>
+<h4>Minor</h4>
+<p>New components, new helper classes, or substantial visual changes to existing components and patterns are <em>minor releases</em>. These are signified by the second number changing. So from 1.1.2 to 1.2.0 there are minor changes.</p>
+<h4>Patches</h4>
+<p>The final number signifies patches such as fixing a pattern or component in a certain browser, or fixing an existing bug. Small changes to the documentation site and the tooling around the Calcite-Web library are also considered patches.</p>
+<h2>Bumping the Version</h2>
+<ol>
+<li>Change the version number in <code>package.json</code> to the desired version number.</li>
+<li>Write a description of the changes, additions, and bug fixes in <code>CHANGELOG.md</code>.</li>
+<li>Make sure <code>Esri/calcite-web</code> is up-to-date with your changes.</li>
+<li>Run <code>grunt release</code>. If prompted enter your GitHub credentials and your s3 access key/secret.</li>
+</ol>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+        <section>
+          
+            <h2 id="deploy-the-documentation" tabindex="0">Deploying the Documentation</h2>
+          
+
+          <p>To update the documentation site, just make sure you have push access to the <code>Esri/calcite-web</code> repo and type <code>grunt deploy</code>. This will build the site and deploy to gh-pages.</p>
+<p>The site should be updated at <a href="http://esri.github.io/calcite-web/">http://esri.github.io/calcite-web/</a> in just a few moments.</p>
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </section>
+        <hr>
+      
+    
+  </main>
+</div>
+
+    </div>
+
+    
+
+    <!-- Footer Pattern -->
+    <footer class="footer leader-3 link-dark-gray" role="contentinfo">
+      <div class="grid-container">
+          <nav class="column-6">
+            <h6>Styleguides</h6>
+            <ul class="list-plain">
+              <li><a href="../styleguides/javascript/">JavaScript</a></li>
+              <li><a href="../styleguides/css/">CSS</a></li>
+              <li><a href="../styleguides/html/">HTML</a></li>
+            </ul>
+          </nav>
+
+          <nav class="column-6">
+            <h6>Resources</h6>
+            <ul class="list-plain">
+              <li><a href="../migration-guide/">Migration Guide</a></li>
+              <li><a href="https://github.com/Esri/calcite-web/releases/">Releases</a></li>
+              <li><a href="https://github.com/Esri/calcite-web/blob/master/CONTRIBUTING.md">Contributing</a></li>
+              <li><a href="https://github.com/Esri/calcite-web/issues/">Issues</a></li>
+              <li><a href="https://github.com/Esri/calcite-web/">GitHub</a></li>
+            </ul>
+          </nav>
+
+          <nav class="column-6">
+            <h6>About Esri</h6>
+            <ul class="list-plain">
+              <li><a href="http://www.esri.com/about-esri/">About Us</a></li>
+              <li><a href="http://www.esri.com/careers/">Careers</a></li>
+              <li><a href="http://blogs.esri.com/esri/esri-insider/">Insiders Blog</a></li>
+              <li><a href="http://www.esri.com/events/user-conference/index.html">User Conference</a></li>
+              <li><a href="http://www.esri.com/events/devsummit/index.html">Developer Summit</a></li>
+            </ul>
+          </nav>
+
+          <nav class="column-6">
+            <a class="esri-logo" href="http://esri.com" aria-label="Esri Home"></a>
+            <section class="footer-social-nav leader-1">
+              <a class="icon-social-twitter" aria-label="Esri on Twitter"  href="https://twitter.com/Esri/"></a>
+              <a class="icon-social-facebook" aria-label="Esri on Facebook"  href="https://www.facebook.com/esrigis/"></a>
+              <a class="icon-social-instagram" aria-label="Esri on Instagram"  href="https://instagram.com/esrigram/"></a>
+              <a class="icon-social-github" aria-label="Esri on GitHub"  href="http://esri.github.com/"></a>
+              <a class="icon-social-contact" aria-label="Contact Esri"  href="http://www.esri.com/about-esri/contact/"></a>
+            </section>
+          </nav>
+
+          <div class="column-24 leader-1">
+            <p><small>Copyright © 2015 Esri. All rights reserved. | <a href="http://www.esri.com/legal/privacy">Privacy</a> | <a href="http://www.esri.com/legal">Legal</a></small></p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="../assets/js/libs/calcite-web.js"></script>
+    <script src="../assets/js/libs/calcite-web-marketing.js"></script>
+
+    <script src="../assets/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    
+
+    
+
+  </body>
+</html>
